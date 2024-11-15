@@ -1,0 +1,22 @@
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="btnDarkTheme" Click="btnDarkTheme_Click" Margin="{adonisUi:Space 1}" Grid.Column="0" Width="115">
+                <Button.Content>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Background="Transparent" Orientation="Horizontal">
+                        <Label Content="Dark Theme"  FontFamily="/res/fonts/#Lexend Medium" VerticalAlignment="Center"/>
+                        <Label Content="&#xf186;" FontFamily="/res/fonts/#Font Awesome 6 Free Solid" FontSize="18" Foreground="{DynamicResource TextColor}" Margin="5,0,0,0"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button x:Name="btnLightTheme" Click="btnLightTheme_Click" Margin="{adonisUi:Space 1}" Grid.Column="1" Width="115">
+                <Button.Content>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Background="Transparent" Orientation="Horizontal">
+                        <Label Content="Light Theme" FontFamily="/res/fonts/#Lexend Medium" VerticalAlignment="Center"/>
+                        <Label Content="&#xf185;" FontFamily="/res/fonts/#Font Awesome 6 Free Solid" FontSize="18" Foreground="{DynamicResource TextColor}" Margin="5,0,0,0"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+        </StackPanel>
+        
+        <Button x:Name="btnEnglish" Content="English" Click="btnEnglish_Click"/>
+        <Button x:Name="btnSerbian" Content="Serbian" Click="btnSerbian_Click"/>
+        <Label Content="{lex:Loc Test}" Foreground="{DynamicResource TextColor}"/>

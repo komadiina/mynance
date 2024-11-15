@@ -1,0 +1,81 @@
+﻿<Page x:Class="mynance.src.navigation.pages.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:mynance.src.navigation.pages"
+      mc:Ignorable="d" 
+      Title="Mynance - Login"
+      xmlns:lex="http://wpflocalizeextension.codeplex.com"
+      lex:LocalizeDictionary.DesignCulture="en"
+      lex:LocalizeDictionary.OutputMissingKeys="True"
+      lex:ResxLocalizationProvider.DefaultAssembly="mynance"
+      lex:ResxLocalizationProvider.DefaultDictionary="Locale"
+      Width="1160"
+      xmlns:adonisUi="clr-namespace:AdonisUI;assembly=AdonisUI"
+      xmlns:adonisControls="clr-namespace:AdonisUI.Controls;assembly=AdonisUI"
+      xmlns:adonisExtensions="clr-namespace:AdonisUI.Extensions;assembly=AdonisUI"
+      >
+
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left">
+        <StackPanel.Resources>
+            <Style TargetType="{x:Type Label}">
+                <Setter Property="Margin" Value="0,10,0,0"/>
+                <Setter Property="Padding" Value="0,5,0,0"/>
+            </Style>
+            
+            <Style TargetType="{x:Type TextBox}">
+                <Setter Property="Margin" Value="0,10,0,0"/>
+                <Setter Property="Padding" Value="5,5,0,5"/>
+            </Style>
+
+            <Style TargetType="{x:Type PasswordBox}">
+                <Setter Property="Margin" Value="0,10,0,0"/>
+                <Setter Property="Padding" Value="5,5,0,5"/>
+            </Style>
+
+            <Style TargetType="{x:Type Button}">
+                <Setter Property="Margin" Value="0,10,0,0"/>
+                <Setter Property="Padding" Value="0,5,0,5"/>
+            </Style>
+        </StackPanel.Resources>
+        
+        <Label Content="{lex:Loc LoginPage_Greeting}" Foreground="{DynamicResource TextColor}" FontFamily="/res/fonts/#Lexend Medium" FontSize="64" Margin="0"/>
+        <Separator Width="400" Height="2" HorizontalAlignment="Left"/>
+
+        <Label Content="{lex:Loc LoginPage_Username}" Foreground="{DynamicResource TextColor}" FontFamily="/res/fonts/#Lexend Medium"
+               FontSize="18"
+               />
+        <TextBox 
+            x:Name="tbUsername"
+            Background="{DynamicResource ElevatedHighColor}" Foreground="{DynamicResource TextColor}" FontFamily="/res/fonts/#Lexend Medium"
+            adonisExtensions:WatermarkExtension.Watermark="Username"
+            Width="400" HorizontalAlignment="Left"
+            FontSize="18"
+            />
+        <Label Content="{lex:Loc LoginPage_Password}" Foreground="{DynamicResource TextColor}" FontFamily="/res/fonts/#Lexend Medium"
+               FontSize="18"
+               />
+        <PasswordBox 
+            x:Name="pbPassword"
+            Background="{DynamicResource ElevatedHighColor}" Foreground="{DynamicResource TextColor}" FontFamily="/res/fonts/#Lexend Medium"
+            FontSize="18"
+            Width="400" HorizontalAlignment="Left"
+            KeyDown="pbPassword_Enter"
+            />
+        <Button Content="{lex:Loc LoginPage_SignIn}" Background="{DynamicResource ElevatedHighColor}" Foreground="{DynamicResource TextColor}" 
+                KeyDown="BtnSignIn_Enter" Click="BtnSignIn_Click"
+                FontFamily="/res/fonts/#Lexend Medium"
+                Width="400" HorizontalAlignment="Left"
+                FontSize="18"
+                />
+        <Label x:Name="lblStatusText" Visibility="Hidden" HorizontalAlignment="Left" FontFamily="/res/fonts/#Lexend Medium" 
+               Foreground="#FFEC2424" FontSize="18"/>
+        <Separator Width="400" Height="2" HorizontalAlignment="Left"/>
+
+        <Button Content="{lex:Loc LoginPage_NoAccount}" Background="{DynamicResource ElevatedHighColor}" Foreground="{DynamicResource TextColor}"
+                FontFamily="/res/fonts/#Lexend Medium"
+                KeyDown="BtnRegister_Enter" Click="BtnRegister_Click"
+                Width="400" HorizontalAlignment="Left"/>
+    </StackPanel>
+</Page>
