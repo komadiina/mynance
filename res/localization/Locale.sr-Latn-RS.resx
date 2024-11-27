@@ -132,4 +132,37 @@
   <data name="LoginPage_NoAccount" xml:space="preserve">
     <value>Nemate nalog? Registrujte se ovdje!</value>
   </data>
+  <data name="RegisterPage_Header" xml:space="preserve">
+    <value>Registrujte se ovdje!</value>
+  </data>
+  <data name="RegisterPage_Username" xml:space="preserve">
+    <value>Korisničko ime</value>
+  </data>
+  <data name="RegisterPage_Fullname" xml:space="preserve">
+    <value>Ime i prezime</value>
+  </data>
+  <data name="RegisterPage_Password" xml:space="preserve">
+    <value>Lozinka</value>
+  </data>
+  <data name="RegisterPage_Submit" xml:space="preserve">
+    <value>Potvrdite</value>
+  </data>
+  <data name="RegisterPage_PasswordConfirm" xml:space="preserve">
+    <value>Potvrdite lozinku</value>
+  </data>
+  <data name="Navigator_Backward" xml:space="preserve">
+    <value>Nazad</value>
+  </data>
+  <data name="LightTheme" xml:space="preserve">
+    <value>Svijetla tema</value>
+  </data>
+  <data name="DarkTheme" xml:space="preserve">
+    <value>Tamna tema</value>
+  </data>
+  <data name="LocaleSerbian" xml:space="preserve">
+    <value>Srpski</value>
+  </data>
+  <data name="LocaleEnglish" xml:space="preserve">
+    <value>Engleski</value>
+  </data>
 </root>

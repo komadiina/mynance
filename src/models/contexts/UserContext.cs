@@ -27,5 +27,13 @@ namespace mynance.src.models.contexts
             String connectionString = String.Format("server={0};port={1};user={2};password={3};database={4}", host, port, user, password, database);
             optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<User>()
+                .Property(x => x.Username).HasColumnName("username");
+        }
     }
 }

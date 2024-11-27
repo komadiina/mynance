@@ -132,4 +132,37 @@
   <data name="LoginPage_NoAccount" xml:space="preserve">
     <value>No account? Sign up here!</value>
   </data>
+  <data name="RegisterPage_Header" xml:space="preserve">
+    <value>Register here!</value>
+  </data>
+  <data name="RegisterPage_Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="RegisterPage_Fullname" xml:space="preserve">
+    <value>Full name</value>
+  </data>
+  <data name="RegisterPage_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="RegisterPage_Submit" xml:space="preserve">
+    <value>Sign up</value>
+  </data>
+  <data name="RegisterPage_PasswordConfirm" xml:space="preserve">
+    <value>Confirm password</value>
+  </data>
+  <data name="Navigator_Backward" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="LightTheme" xml:space="preserve">
+    <value>Light Theme</value>
+  </data>
+  <data name="DarkTheme" xml:space="preserve">
+    <value>Dark Theme</value>
+  </data>
+  <data name="LocaleSerbian" xml:space="preserve">
+    <value>Serbian</value>
+  </data>
+  <data name="LocaleEnglish" xml:space="preserve">
+    <value>English</value>
+  </data>
 </root>

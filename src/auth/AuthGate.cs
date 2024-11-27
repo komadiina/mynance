@@ -36,6 +36,7 @@ namespace mynance.src.auth
             if (BC.EnhancedVerify(password, user.Password) == false)
                 throw new InvalidPasswordException("Invalid password.");
             UserRoleContext rolesCtx = new();
+
             try
             {
                 //UserRole role = rolesCtx.Roles.Where(ur => ur.username == username).FirstOrDefault();

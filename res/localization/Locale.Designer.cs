@@ -61,6 +61,42 @@ namespace mynance.res.localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Dark Theme.
+        /// </summary>
+        internal static string DarkTheme {
+            get {
+                return ResourceManager.GetString("DarkTheme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Light Theme.
+        /// </summary>
+        internal static string LightTheme {
+            get {
+                return ResourceManager.GetString("LightTheme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to English.
+        /// </summary>
+        internal static string LocaleEnglish {
+            get {
+                return ResourceManager.GetString("LocaleEnglish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Serbian.
+        /// </summary>
+        internal static string LocaleSerbian {
+            get {
+                return ResourceManager.GetString("LocaleSerbian", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Welcome to Mynance!.
         /// </summary>
         internal static string LoginPage_Greeting {
@@ -102,6 +138,69 @@ namespace mynance.res.localization {
         internal static string LoginPage_Username {
             get {
                 return ResourceManager.GetString("LoginPage_Username", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back.
+        /// </summary>
+        internal static string Navigator_Backward {
+            get {
+                return ResourceManager.GetString("Navigator_Backward", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Full name.
+        /// </summary>
+        internal static string RegisterPage_Fullname {
+            get {
+                return ResourceManager.GetString("RegisterPage_Fullname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Register here!.
+        /// </summary>
+        internal static string RegisterPage_Header {
+            get {
+                return ResourceManager.GetString("RegisterPage_Header", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        internal static string RegisterPage_Password {
+            get {
+                return ResourceManager.GetString("RegisterPage_Password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirm password.
+        /// </summary>
+        internal static string RegisterPage_PasswordConfirm {
+            get {
+                return ResourceManager.GetString("RegisterPage_PasswordConfirm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sign up.
+        /// </summary>
+        internal static string RegisterPage_Submit {
+            get {
+                return ResourceManager.GetString("RegisterPage_Submit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Username.
+        /// </summary>
+        internal static string RegisterPage_Username {
+            get {
+                return ResourceManager.GetString("RegisterPage_Username", resourceCulture);
             }
         }
     }

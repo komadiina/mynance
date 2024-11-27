@@ -1,4 +1,11 @@
+# dev dependencies
 /build
 /obj
+/dev
 
+# confs 
 appsettings.json
+
+# vs studio trash
+*.TMP
+*.log

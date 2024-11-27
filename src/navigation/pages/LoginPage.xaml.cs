@@ -1,6 +1,8 @@
 ﻿using mynance.src.auth;
 using mynance.src.exceptions;
 using mynance.src.exceptions.auth;
+using mynance.src.localization;
+using mynance.src.styles;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -98,5 +100,10 @@ namespace mynance.src.navigation.pages
                 Navigator.Next(AuthGate.Role == 1 ? new LandingAdministrator() : new LandingUser());
             }
         }
+
+        public void btnLightTheme_Click(object sender, RoutedEventArgs e) => ThemeHandler.SetLightTheme();
+        public void btnDarkTheme_Click(object sender, RoutedEventArgs e) => ThemeHandler.SetDarkTheme();
+        public void btnEnglish_Click(object sender, RoutedEventArgs e) => LocaleHandler.SetEnglish();
+        public void btnSerbian_Click(object sender, RoutedEventArgs e) => LocaleHandler.SetSerbian();
     }
 }

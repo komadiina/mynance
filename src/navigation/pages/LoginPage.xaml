@@ -39,7 +39,14 @@
                 <Setter Property="Padding" Value="0,5,0,5"/>
             </Style>
         </StackPanel.Resources>
-        
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Button x:Name="btnDarkTheme" Click="btnDarkTheme_Click" Width="107" Content="{lex:Loc DarkTheme}" FontFamily="/res/fonts/#Lexend Medium" Margin="{adonisUi:Space 1}"/>
+            <Button x:Name="btnLightTheme" Click="btnLightTheme_Click" Width="107" Content="{lex:Loc LightTheme}" FontFamily="/res/fonts/#Lexend Medium" Margin="{adonisUi:Space 1}"/>
+            <Button x:Name="btnEnglish" Content="{lex:Loc LocaleEnglish}" Click="btnEnglish_Click" Margin="{adonisUi:Space 1}" FontFamily="/res/fonts/#Lexend Medium" Width="65"/>
+            <Button x:Name="btnSerbian" Content="{lex:Loc LocaleSerbian}" Click="btnSerbian_Click" Margin="{adonisUi:Space 1}" FontFamily="/res/fonts/#Lexend Medium" Width="65"/>
+        </StackPanel>
+
         <Label Content="{lex:Loc LoginPage_Greeting}" Foreground="{DynamicResource TextColor}" FontFamily="/res/fonts/#Lexend Medium" FontSize="64" Margin="0"/>
         <Separator Width="400" Height="2" HorizontalAlignment="Left"/>
 

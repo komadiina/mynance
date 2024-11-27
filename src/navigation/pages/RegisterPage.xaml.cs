@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,24 @@ namespace mynance.src.navigation.pages
         public RegisterPage()
         {
             InitializeComponent();
+        }
+
+        private void BtnRegister_Click(object sender, RoutedEventArgs e) 
+        {
+            Register(tbUsername.Text, pbPassword.Password, PbPasswordConfirm.Password, tbFullname.Text);
+        }
+
+        private void Register_KeyDownEnter(object sender, KeyEventArgs e)
+        {
+            if (e.Key != Key.Enter) return;
+            Register(tbUsername.Text, pbPassword.Password, PbPasswordConfirm.Password, tbFullname.Text);
+        }
+
+        private void Register(String username, String password, String passwordConfirm, String fullName)
+        {
+            Trace.WriteLine(username + ":" + password + ":" + passwordConfirm + ":" + fullName);
+            lblStatusText.Content = "test";
+            lblStatusText.Visibility = Visibility.Visible;
         }
     }
 }

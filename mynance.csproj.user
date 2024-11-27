@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="src\navigation\BackButton.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="src\navigation\pages\LandingAdministrator.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -27,7 +30,7 @@
     <Page Update="res\styles\StyleSheet.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="src\navigation\NavBackButton.xaml">
+    <Page Update="src\navigation\BackButton.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="src\navigation\pages\LandingAdministrator.xaml">
