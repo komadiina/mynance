@@ -10,6 +10,12 @@
     <Compile Update="src\navigation\BackButton.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="src\components\SideNavbar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="src\components\UserDashboard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="src\navigation\pages\LandingAdministrator.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -17,6 +23,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="src\navigation\pages\LoginPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="src\navigation\pages\ProfilePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="src\navigation\pages\RegisterPage.xaml.cs">
@@ -33,6 +42,12 @@
     <Page Update="src\navigation\BackButton.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="src\components\SideNavbar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="src\components\UserDashboard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="src\navigation\pages\LandingAdministrator.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -40,6 +55,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="src\navigation\pages\LoginPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="src\navigation\pages\ProfilePage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="src\navigation\pages\RegisterPage.xaml">

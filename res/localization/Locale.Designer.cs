@@ -203,5 +203,14 @@ namespace mynance.res.localization {
                 return ResourceManager.GetString("RegisterPage_Username", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Welcome.
+        /// </summary>
+        internal static string SideNavbar_Greeting {
+            get {
+                return ResourceManager.GetString("SideNavbar_Greeting", resourceCulture);
+            }
+        }
     }
 }

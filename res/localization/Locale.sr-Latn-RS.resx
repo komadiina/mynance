@@ -165,4 +165,7 @@
   <data name="LocaleEnglish" xml:space="preserve">
     <value>Engleski</value>
   </data>
+  <data name="SideNavbar_Greeting" xml:space="preserve">
+    <value>Dobrodošli,</value>
+  </data>
 </root>

@@ -7,6 +7,6 @@
 # confs 
 appsettings.json
 
-# vs studio trash
+# vs trash
 *.TMP
 *.log

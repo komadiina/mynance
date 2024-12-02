@@ -23,6 +23,13 @@
     <None Remove="res\fonts\Lexend-Thin.ttf" />
     <None Remove="res\icons\dark_mode.png" />
     <None Remove="res\icons\light_mode.png" />
+    <None Remove="res\icons\mynance.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="res\icons\mynance.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
