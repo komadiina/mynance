@@ -1,4 +1,6 @@
-﻿using System;
+﻿using mynance.src.auth;
+using mynance.src.exceptions;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -39,9 +41,27 @@ namespace mynance.src.navigation.pages
 
         private void Register(String username, String password, String passwordConfirm, String fullName)
         {
-            Trace.WriteLine(username + ":" + password + ":" + passwordConfirm + ":" + fullName);
-            lblStatusText.Content = "test";
-            lblStatusText.Visibility = Visibility.Visible;
+            try
+            {
+                AuthGate auth = new AuthGate();
+                auth.RegisterUser(username, password, passwordConfirm, fullName);
+            } catch (Exception ex)
+            {
+                if (ex is not AuthException) {
+                    lblStatusText.Content = "Something went wrong - " + ex.Message;
+                } 
+                else {
+                    lblStatusText.Content = ex.Message;
+                }
+
+                lblStatusText.Foreground = Brushes.MediumVioletRed;
+                lblStatusText.Visibility = Visibility.Visible;
+            
+                return;
+            }
+
+            lblStatusText.Content = "Success! You can now go back and sign in.";
+            lblStatusText.Foreground = Brushes.Green;
         }
     }
 }

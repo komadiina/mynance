@@ -1,5 +1,6 @@
 ﻿using BCrypt.Net;
 using Microsoft.EntityFrameworkCore;
+using mynance.src.exceptions;
 using mynance.src.exceptions.auth;
 using mynance.src.models;
 using mynance.src.models.contexts;
@@ -24,17 +25,21 @@ namespace mynance.src.auth
         // TODO: implement proper return value and handling
         public void LoginUser(String username, String password) {
             if (username == null || password == null || username.Trim().Length == 0 || password.Trim().Length == 0)
-                throw new EmptyFieldException("Username field cannot be empty.");
+                throw new EmptyFieldException(LocalizedMessages.Instance.GetMessage("emptyField"));
+                //throw new EmptyFieldException("Username field cannot be empty.");
 
             if (usernameRegex.IsMatch(username) == false)
-                throw new InvalidUsernameException("Invalid username.");
+                throw new InvalidUsernameException(LocalizedMessages.Instance.GetMessage("invalidUsername"));
+                //throw new InvalidUsernameException("Invalid username.");
 
             UserContext ctx = new();
             User user = ctx.Users.Where(x => x.Username == username).FirstOrDefault() 
-                ?? throw new NoUserExistsException(String.Format("User '{0}' does not exist.", username));
+                ?? throw new NoUserExistsException(LocalizedMessages.Instance.GetMessage("noUserExists"));
 
             if (BC.EnhancedVerify(password, user.Password) == false)
-                throw new InvalidPasswordException("Invalid password.");
+                throw new InvalidPasswordException(LocalizedMessages.Instance.GetMessage("invalidCredentials"));
+                //throw new InvalidPasswordException("Invalid password.");
+
             UserRoleContext rolesCtx = new();
 
             try
@@ -48,22 +53,27 @@ namespace mynance.src.auth
             catch (Exception e)
             {
                 Trace.WriteLine(e.Message);
-                throw new NoUserExistsException(String.Format("User '{0}' is not assigned a role.", username));
+                throw new NoUserExistsException(LocalizedMessages.Instance.GetMessage("unassignedRole"));
             }
         }
 
         public void RegisterUser(String username, String password, String passwordRepeat, String fullName)
         {
             if (usernameRegex.IsMatch(username) == false)
-                throw new InvalidUsernameException("Invalid username.");
+                throw new InvalidUsernameException(LocalizedMessages.Instance.GetMessage("invalidUsername"));
+                //throw new InvalidUsernameException("Invalid username.");
 
             if (password != passwordRepeat)
-                throw new InvalidPasswordException("Passwords do not match.");
+                throw new InvalidPasswordException(LocalizedMessages.Instance.GetMessage("passwordMismatch"));
+                //throw new InvalidPasswordException("Passwords do not match.");
 
             if (fullName == null)
-                throw new EmptyFieldException("Full name field cannot be empty.");
+                throw new EmptyFieldException(LocalizedMessages.Instance.GetMessage("emptyField"));
+                //throw new EmptyFieldException("Full name field cannot be empty.");
+
             else if (fullName.Trim().Length == 0 || fullName.Trim() == "") 
-                throw new EmptyFieldException("Full name field cannot be empty.");
+                throw new EmptyFieldException(LocalizedMessages.Instance.GetMessage("emptyField"));
+                //throw new EmptyFieldException("Full name field cannot be empty.");
 
             UserContext ctx = new();
             if (ctx.Users.Any(u => u.Username == username))

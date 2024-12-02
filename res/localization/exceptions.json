@@ -1,0 +1,41 @@
+{
+  "usernameTaken": {
+    "en-US": "Username already taken.",
+    "sr-Latn-RS": "Korisničko ime je zauzeto."
+  },
+
+  "invalidUsername": {
+    "en-US": "Invalid username.",
+    "sr-Latn-RS": "Korisničko ime nije važeće."
+  },
+
+  "emptyField": {
+    "en-US": "Fields cannot be empty.",
+    "sr-Latn-RS": "Polja ne smiju biti prazna."
+  },
+
+  "noUserExists": {
+    "en-US": "User does not exist.",
+    "sr-Latn-RS": "Korisnik sa datim korisničkim imenom ne postoji."
+  },
+
+  "invalidPassword": {
+    "en-US": "Password must be 8 characters or longer.",
+    "sr-Latn-RS": "Lozinka mora imati najmanje 8 karaktera."
+  },
+
+  "invalidCredentials": {
+    "en-US": "Invalid credentials.",
+    "sr-Latn-RS": "Pogresno korisničko ime ili lozinka."
+  },
+
+  "passwordMismatch": {
+    "en-US": "Passwords do not match.",
+    "sr-Latn-RS": "Lozinke se ne podudaraju."
+  },
+
+  "roleUnassigned": {
+    "en-US": "You have not been assigned a role.",
+    "sr-Latn-RS": "Nemate pravo pristupa sistemu."
+  }
+}

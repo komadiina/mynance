@@ -82,7 +82,7 @@ namespace mynance.src.navigation.pages
             }
             catch (Exception ex)
             {
-                lblStatusText.Foreground = Brushes.Red;
+                lblStatusText.Foreground = Brushes.MediumVioletRed;
 
                 if (ex is AuthException)
                     return ex.Message;
