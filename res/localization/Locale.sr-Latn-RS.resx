@@ -168,4 +168,16 @@
   <data name="SideNavbar_Greeting" xml:space="preserve">
     <value>Dobrodošli,</value>
   </data>
+  <data name="SideNavbar_ProfileSettings" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="SideNavbar_Calendar" xml:space="preserve">
+    <value>Kalendar</value>
+  </data>
+  <data name="SideNavbar_Logout" xml:space="preserve">
+    <value>Odjava</value>
+  </data>
+  <data name="SideNavbar_Dashboard" xml:space="preserve">
+    <value>Početna</value>
+  </data>
 </root>

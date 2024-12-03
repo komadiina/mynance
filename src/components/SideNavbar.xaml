@@ -5,14 +5,62 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:mynance.src.components"
              mc:Ignorable="d" 
-             Height="800" Width="200"
+             Height="750" Width="200"
              xmlns:lex="http://wpflocalizeextension.codeplex.com"
              lex:LocalizeDictionary.DesignCulture="en"
              lex:LocalizeDictionary.OutputMissingKeys="True"
              lex:ResxLocalizationProvider.DefaultAssembly="mynance"
-             lex:ResxLocalizationProvider.DefaultDictionary="Locale">
-    <StackPanel Orientation="Vertical" Margin="0,24" HorizontalAlignment="Center" VerticalAlignment="Top">
-        <Label Content="{lex:Loc SideNavbar_Greeting}" FontFamily="res/fonts/#Lexend Deca Light" FontSize="24" Foreground="White" HorizontalAlignment="Center"/>
-        <Label x:Name="UserFullname" FontFamily="res/fonts/#Lexend Deca Light" FontSize="20" Foreground="White" HorizontalAlignment="Center"/>
-    </StackPanel>
+             lex:ResxLocalizationProvider.DefaultDictionary="Locale"
+             xmlns:components="clr-namespace:mynance.src.components">
+    <Border CornerRadius="0" BorderBrush="{DynamicResource TextColor}" BorderThickness="0,0,1,0">
+        <DockPanel LastChildFill="False">
+            <StackPanel DockPanel.Dock="Top" Orientation="Vertical" Margin="0,24" HorizontalAlignment="Center">
+                <Label Content="{lex:Loc SideNavbar_Greeting}" FontFamily="res/fonts/#Lexend Deca Light" FontSize="24" HorizontalAlignment="Center"/>
+                <Label x:Name="UserFullname" FontFamily="res/fonts/#Lexend Deca Light" FontSize="20" HorizontalAlignment="Center"/>
+
+                <Separator Margin="0,24,0,24" />
+                
+                <Button 
+                    x:Name="NavDashboard" 
+                    FontSize="16"  
+                    FontFamily="res/fonts/#Lexend Deca Light"    
+                    Content="{lex:Loc SideNavbar_Dashboard}"  
+                    HorizontalAlignment="Center"
+                    Click="NavDashboard_Click" 
+                    Width="100" 
+                    Margin="0,10"/>
+
+                <Button 
+                    x:Name="NavCalendar" 
+                    FontFamily="res/fonts/#Lexend Deca Light" 
+                    FontSize="16"  
+                    HorizontalAlignment="Center"
+                    Content="{lex:Loc SideNavbar_Calendar}" 
+                    Click="NavCalendar_Click" 
+                    Width="100" 
+                    Margin="0,10"/>
+
+                <Button 
+                    x:Name="NavProfileSettings" 
+                    FontSize="16"  
+                    FontFamily="res/fonts/#Lexend Deca Light"    
+                    Content="{lex:Loc SideNavbar_ProfileSettings}"  
+                    HorizontalAlignment="Center"
+                    Click="NavProfileSettings_Click" 
+                    Width="100" 
+                    Margin="0,10"/>
+            </StackPanel>
+
+            <Button 
+                x:Name="NavLogout" 
+                DockPanel.Dock="Bottom" 
+                FontFamily="res/fonts/#Lexend Deca Light" 
+                FontSize="16" 
+                HorizontalAlignment="Center" 
+                Content="{lex:Loc SideNavbar_Logout}" 
+                Click="NavLogout_Click" 
+                Width="100" 
+                Margin="0,10"/>
+        </DockPanel>
+    </Border>
 </UserControl>

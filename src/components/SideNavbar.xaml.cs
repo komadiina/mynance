@@ -1,18 +1,9 @@
 ﻿using mynance.src.auth;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using mynance.src.navigation;
+using mynance.src.navigation.pages;
+
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace mynance.src.components
 {
@@ -25,6 +16,20 @@ namespace mynance.src.components
         {
             InitializeComponent();
             UserFullname.Content = AuthGate.CurrentUser.FullName;
+        }
+
+        public void NavProfileSettings_Click(object sender, RoutedEventArgs e) => Navigator.Next(new ProfilePage());
+        public void NavCalendar_Click(object sender, RoutedEventArgs e) => Navigator.Next(new CalendarPage());
+
+        public void NavLogout_Click(object sender, RoutedEventArgs e)
+        {
+            AuthGate.Logout();
+            Navigator.Reset();
+        }
+
+        private void NavDashboard_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

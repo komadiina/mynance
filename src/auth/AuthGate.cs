@@ -100,5 +100,11 @@ namespace mynance.src.auth
             rolesCtx.Roles.Add(role);
             rolesCtx.SaveChanges();
         }
+        
+        public static void Logout()
+        {
+            CurrentUser = null;
+            Role = 0;
+        }
     }
 }

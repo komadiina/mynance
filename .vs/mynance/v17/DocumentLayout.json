@@ -7,28 +7,8 @@
       "RelativeMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|solutionrelative:src\\components\\sidenavbar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|c:\\users\\ognjen\\desktop\\mynance\\src\\navigation\\pages\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|solutionrelative:src\\navigation\\pages\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|c:\\users\\ognjen\\desktop\\mynance\\src\\navigation\\pages\\landinguser.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|solutionrelative:src\\navigation\\pages\\landinguser.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|c:\\users\\ognjen\\desktop\\mynance\\src\\components\\sidenavbar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|solutionrelative:src\\components\\sidenavbar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|c:\\users\\ognjen\\desktop\\mynance\\src\\navigation\\pages\\profilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|solutionrelative:src\\navigation\\pages\\profilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|c:\\users\\ognjen\\desktop\\mynance\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|c:\\users\\ognjen\\desktop\\mynance\\src\\navigation\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|solutionrelative:src\\navigation\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,25 +35,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RegisterPage.xaml",
-              "DocumentMoniker": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\navigation\\pages\\RegisterPage.xaml",
-              "RelativeDocumentMoniker": "src\\navigation\\pages\\RegisterPage.xaml",
-              "ToolTip": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\navigation\\pages\\RegisterPage.xaml",
-              "RelativeToolTip": "src\\navigation\\pages\\RegisterPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-02T17:27:02.695Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProfilePage.xaml",
-              "DocumentMoniker": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\navigation\\pages\\ProfilePage.xaml",
-              "RelativeDocumentMoniker": "src\\navigation\\pages\\ProfilePage.xaml",
-              "ToolTip": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\navigation\\pages\\ProfilePage.xaml",
-              "RelativeToolTip": "src\\navigation\\pages\\ProfilePage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-02T17:26:58.16Z",
+              "Title": "SideNavbar.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\components\\SideNavbar.xaml.cs",
+              "RelativeDocumentMoniker": "src\\components\\SideNavbar.xaml.cs",
+              "ToolTip": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\components\\SideNavbar.xaml.cs",
+              "RelativeToolTip": "src\\components\\SideNavbar.xaml.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T17:32:59.836Z",
               "EditorCaption": ""
             },
             {
@@ -85,56 +53,7 @@
               "ToolTip": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\components\\SideNavbar.xaml",
               "RelativeToolTip": "src\\components\\SideNavbar.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-02T17:24:59.316Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\ognjen\\Desktop\\mynance\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\ognjen\\Desktop\\mynance\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-02T16:17:52.095Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SideNavbar.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\components\\SideNavbar.xaml.cs",
-              "RelativeDocumentMoniker": "src\\components\\SideNavbar.xaml.cs",
-              "ToolTip": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\components\\SideNavbar.xaml.cs",
-              "RelativeToolTip": "src\\components\\SideNavbar.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T15:44:34.747Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LandingUser.xaml",
-              "DocumentMoniker": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\navigation\\pages\\LandingUser.xaml",
-              "RelativeDocumentMoniker": "src\\navigation\\pages\\LandingUser.xaml",
-              "ToolTip": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\navigation\\pages\\LandingUser.xaml",
-              "RelativeToolTip": "src\\navigation\\pages\\LandingUser.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-02T15:44:06.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginPage.xaml",
-              "DocumentMoniker": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\navigation\\pages\\LoginPage.xaml",
-              "RelativeDocumentMoniker": "src\\navigation\\pages\\LoginPage.xaml",
-              "ToolTip": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\navigation\\pages\\LoginPage.xaml",
-              "RelativeToolTip": "src\\navigation\\pages\\LoginPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-02T15:44:03.279Z",
+              "WhenOpened": "2024-12-03T17:32:30.154Z",
               "EditorCaption": ""
             }
           ]

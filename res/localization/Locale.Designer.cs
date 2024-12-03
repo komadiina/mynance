@@ -205,11 +205,47 @@ namespace mynance.res.localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Calendar.
+        /// </summary>
+        internal static string SideNavbar_Calendar {
+            get {
+                return ResourceManager.GetString("SideNavbar_Calendar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dashboard.
+        /// </summary>
+        internal static string SideNavbar_Dashboard {
+            get {
+                return ResourceManager.GetString("SideNavbar_Dashboard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Welcome.
         /// </summary>
         internal static string SideNavbar_Greeting {
             get {
                 return ResourceManager.GetString("SideNavbar_Greeting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sign out.
+        /// </summary>
+        internal static string SideNavbar_Logout {
+            get {
+                return ResourceManager.GetString("SideNavbar_Logout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Profile.
+        /// </summary>
+        internal static string SideNavbar_ProfileSettings {
+            get {
+                return ResourceManager.GetString("SideNavbar_ProfileSettings", resourceCulture);
             }
         }
     }

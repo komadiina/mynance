@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using mynance.src.auth;
 using mynance.src.navigation.pages;
 
 namespace mynance.src.navigation
@@ -22,6 +23,9 @@ namespace mynance.src.navigation
 
         public static void Previous()
         {
+            // Prevent accidentally navigating back to the login page, requires manually signing out
+            if (AuthGate.CurrentUser != null && pages.ElementAt(pages.Count() - 1) is LoginPage) { return; }
+
             try {
                 if (pages.Count > 1) {
                     // todo: leak?
@@ -32,7 +36,12 @@ namespace mynance.src.navigation
             {
                 Trace.WriteLine("Unable to navigate back.");
             }
-            
+        }
+
+        public static void Reset()
+        {
+            pages.Clear();
+            Next(new LoginPage());
         }
     }
 }

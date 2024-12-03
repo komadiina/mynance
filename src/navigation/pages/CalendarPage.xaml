@@ -1,16 +1,16 @@
-﻿<Page x:Class="mynance.src.navigation.pages.LandingUser"
+﻿<Page x:Class="mynance.src.navigation.pages.CalendarPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:mynance.src.navigation.pages"
       mc:Ignorable="d" 
+      Title="CalendarPage"
       Width="1160"
-      xmlns:components="clr-namespace:mynance.src.components"
-      Title="Mynance - Dashboard">
+      xmlns:components="clr-namespace:mynance.src.components">
 
     <StackPanel Orientation="Horizontal">
         <components:SideNavbar/>
-        <Label Content="LandingUser"/>
+        <Label Content="CalendarPage"/>
     </StackPanel>
 </Page>
