@@ -180,4 +180,7 @@
   <data name="SideNavbar_Dashboard" xml:space="preserve">
     <value>Dashboard</value>
   </data>
+  <data name="ProfilePage_BalanceStatus" xml:space="preserve">
+    <value>Balance as of</value>
+  </data>
 </root>

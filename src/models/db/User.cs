@@ -1,19 +1,19 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace mynance.src.models
+namespace mynance.src.models.db
 {
     [PrimaryKey(nameof(Username))]
     public class User
     {
         [Column("username")]
-        public String Username { get; set; }
+        public string Username { get; set; }
 
         [Column("fullname")]
-        public String FullName { get; set; }
+        public string FullName { get; set; }
 
         [Column("password")]
-        public String Password { get; set; }
+        public string Password { get; set; }
 
         [Column("registration_date")]
         public DateTime RegistrationDate { get; set; }

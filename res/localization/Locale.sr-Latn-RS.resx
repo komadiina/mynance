@@ -154,7 +154,7 @@
     <value>Nazad</value>
   </data>
   <data name="LightTheme" xml:space="preserve">
-    <value>Svijetla tema</value>
+    <value>Svetla tema</value>
   </data>
   <data name="DarkTheme" xml:space="preserve">
     <value>Tamna tema</value>
@@ -179,5 +179,8 @@
   </data>
   <data name="SideNavbar_Dashboard" xml:space="preserve">
     <value>Početna</value>
+  </data>
+  <data name="ProfilePage_BalanceStatus" xml:space="preserve">
+    <value>Stanje za</value>
   </data>
 </root>

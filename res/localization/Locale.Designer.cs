@@ -151,6 +151,15 @@ namespace mynance.res.localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Balance as of.
+        /// </summary>
+        internal static string ProfilePage_BalanceStatus {
+            get {
+                return ResourceManager.GetString("ProfilePage_BalanceStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Full name.
         /// </summary>
         internal static string RegisterPage_Fullname {

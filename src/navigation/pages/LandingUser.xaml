@@ -7,10 +7,21 @@
       mc:Ignorable="d" 
       Width="1160"
       xmlns:components="clr-namespace:mynance.src.components"
-      Title="Mynance - Dashboard">
+      Title="Mynance - Dashboard"
+	  xmlns:lex="http://wpflocalizeextension.codeplex.com"
+      lex:LocalizeDictionary.DesignCulture="en"
+      lex:LocalizeDictionary.OutputMissingKeys="True"
+      lex:ResxLocalizationProvider.DefaultAssembly="mynance"
+      lex:ResxLocalizationProvider.DefaultDictionary="Locale"
+      xmlns:adonisUi="clr-namespace:AdonisUI;assembly=AdonisUI"
+      xmlns:adonisControls="clr-namespace:AdonisUI.Controls;assembly=AdonisUI"
+      xmlns:adonisExtensions="clr-namespace:AdonisUI.Extensions;assembly=AdonisUI">
 
     <StackPanel Orientation="Horizontal">
         <components:SideNavbar/>
-        <Label Content="LandingUser"/>
-    </StackPanel>
+		<StackPanel Orientation="Vertical" Margin="16,8">
+			<Label x:Name="lblPageDateIndicator" FontSize="28" FontFamily="/res/fonts/#Lexend Medium" Content="{Binding PageDateIndicator}" Margin="0,20,0,10"/>
+			<Label x:Name="lblBalanceAmount" FontSize="28" FontFamily="/res/fonts/#Lexend Light" Content="{Binding BalanceAmount}" Margin="0,4"/>
+		</StackPanel>
+	</StackPanel>
 </Page>

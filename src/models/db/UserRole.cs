@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace mynance.src.models
+namespace mynance.src.models.db
 {
     // TODO: zasto mi puca kada je Username a ne username ?? ?? ?? ? 
 
@@ -16,7 +16,7 @@ namespace mynance.src.models
     public class UserRole
     {
         [Column("username")]
-        public String Username { get; set; }
+        public string Username { get; set; }
 
         [Column("role")]
         public int Role { get; set; }

@@ -1,4 +1,9 @@
 {
+  "usernameTooLong": {
+    "en-US": "Username must be less than 16 characters long.",
+    "sr-Latn-RS": "Korisničko ime mora imati manje od 16 karaktera."
+  },
+
   "usernameTaken": {
     "en-US": "Username already taken.",
     "sr-Latn-RS": "Korisničko ime je zauzeto."

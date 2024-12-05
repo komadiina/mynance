@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>res\icons\roi.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,15 +28,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="res\icons\mynance.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    <Resource Include="res\icons\roi.ico" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AdonisUI" Version="1.17.1" />
     <PackageReference Include="AdonisUI.ClassicTheme" Version="1.17.1" />
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.0" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2" />
     <PackageReference Include="WPFLocalizeExtension" Version="3.10.0" />
@@ -98,11 +98,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="src\utilities\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="res\icons\roi.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="res\localization\exceptions.json">

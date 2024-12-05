@@ -1,44 +1,49 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Media;
+﻿using AdonisUI;
 using System.Windows;
-using AdonisUI;
+using System.Windows.Media;
 
 namespace mynance.src.styles
 {
-    public class ThemeHandler
-    {
-        public static void SetDarkTheme()
-        {
-            var rd = new ResourceDictionary();
+	public class ThemeHandler
+	{
+		public static bool IsDarkMode;
 
-            rd.Add("TextColor", (SolidColorBrush)new BrushConverter().ConvertFrom("#fefefe"));
-            //rd.Add("AccentColor", (SolidColorBrush)new BrushConverter().ConvertFrom("#ffc300"));
-            //rd.Add("BackgroundColor", (SolidColorBrush)new BrushConverter().ConvertFrom("#000814"));
-            //rd.Add("ElevatedColor", (SolidColorBrush)new BrushConverter().ConvertFrom("#001d3d"));
-            //rd.Add("ElevatedHighColor", (SolidColorBrush)new BrushConverter().ConvertFrom("#003566"));
+		public static void SetTheme(bool darkMode)
+		{
+			if (darkMode) { SetDarkTheme(); }
+			else { SetLightTheme(); }
+		}
 
-            Application.Current.Resources.MergedDictionaries.Add(rd);
+		public static void SetDarkTheme()
+		{
+			var rd = new ResourceDictionary();
 
-            AdonisUI.ResourceLocator.SetColorScheme(Application.Current.Resources, ResourceLocator.DarkColorScheme);
-        }
+			rd.Add("TextColor", (SolidColorBrush)new BrushConverter().ConvertFrom("#fefefe"));
+			//rd.Add("AccentColor", (SolidColorBrush)new BrushConverter().ConvertFrom("#ffc300"));
+			//rd.Add("BackgroundColor", (SolidColorBrush)new BrushConverter().ConvertFrom("#000814"));
+			//rd.Add("ElevatedColor", (SolidColorBrush)new BrushConverter().ConvertFrom("#001d3d"));
+			//rd.Add("ElevatedHighColor", (SolidColorBrush)new BrushConverter().ConvertFrom("#003566"));
 
-        public static void SetLightTheme()
-        {
-            var rd = new ResourceDictionary();
+			Application.Current.Resources.MergedDictionaries.Add(rd);
 
-            rd.Add("TextColor", (SolidColorBrush)new BrushConverter().ConvertFrom("#121212"));
-            //rd.Add("AccentColor", (SolidColorBrush)new BrushConverter().ConvertFrom("#ffc300"));
-            //rd.Add("BackgroundColor", (SolidColorBrush)new BrushConverter().ConvertFrom("#ffd60a"));
+			AdonisUI.ResourceLocator.SetColorScheme(Application.Current.Resources, ResourceLocator.DarkColorScheme);
+			IsDarkMode = true;
+		}
 
-            //rd.Add("ElevatedColor", (SolidColorBrush)new BrushConverter().ConvertFrom("#003566"));
-            //rd.Add("ElevatedHighColor", (SolidColorBrush)new BrushConverter().ConvertFrom("#0f4576"));
+		public static void SetLightTheme()
+		{
+			var rd = new ResourceDictionary();
 
-            Application.Current.Resources.MergedDictionaries.Add(rd);
-            AdonisUI.ResourceLocator.SetColorScheme(Application.Current.Resources, ResourceLocator.LightColorScheme);
-        }
-    }
+			rd.Add("TextColor", (SolidColorBrush)new BrushConverter().ConvertFrom("#121212"));
+			//rd.Add("AccentColor", (SolidColorBrush)new BrushConverter().ConvertFrom("#ffc300"));
+			//rd.Add("BackgroundColor", (SolidColorBrush)new BrushConverter().ConvertFrom("#ffd60a"));
+
+			//rd.Add("ElevatedColor", (SolidColorBrush)new BrushConverter().ConvertFrom("#003566"));
+			//rd.Add("ElevatedHighColor", (SolidColorBrush)new BrushConverter().ConvertFrom("#0f4576"));
+
+			Application.Current.Resources.MergedDictionaries.Add(rd);
+			AdonisUI.ResourceLocator.SetColorScheme(Application.Current.Resources, ResourceLocator.LightColorScheme);
+			IsDarkMode = false;
+		}
+	}
 }
