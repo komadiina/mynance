@@ -30,7 +30,7 @@ namespace mynance.src.auth
 			//throw new InvalidUsernameException("Invalid username.");
 
 			UserContext ctx = new();
-			User user = ctx.Users.Where(x => x.Username == username).FirstOrDefault()
+			User user = ctx.Users.Where(x => x.Username == username && x.IsActive == true).FirstOrDefault()
 				?? throw new NoUserExistsException(LocalizedMessages.Instance.GetMessage("noUserExists"));
 
 			if (BC.EnhancedVerify(password, user.Password) == false)
@@ -63,7 +63,8 @@ namespace mynance.src.auth
 				{
 					Username = username,
 					LocaleName = LocaleHandler.Instance.CurrentLocale,
-					UseDarkTheme = ThemeHandler.IsDarkMode
+					UseDarkTheme = ThemeHandler.IsDarkMode,
+					CurrencyID = 977
 				};
 				preference = current;
 				preferencesCtx.Add(current);
@@ -81,7 +82,9 @@ namespace mynance.src.auth
 			ThemeHandler.SetTheme(preference.UseDarkTheme);
 
 			// Update last active
-			// TODO
+			user.LastActive = DateTime.Now;
+			ctx.Users.Update(user);
+			ctx.SaveChanges();
 		}
 
 		public void RegisterUser(String username, String password, String passwordRepeat, String fullName)

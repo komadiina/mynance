@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace mynance.src.models.db
 {
 	[Table("budgets")]
-	[PrimaryKey(nameof(Username))]
+	[PrimaryKey(nameof(Username), nameof(ValidUntil), nameof(CategoryID))]
 	public class Budget
 	{
 		[Column("username")]

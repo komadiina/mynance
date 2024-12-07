@@ -3,6 +3,7 @@ using mynance.src.localization;
 using mynance.src.models.db;
 using mynance.src.models.db.contexts;
 using mynance.src.styles;
+using mynance.src.utilities;
 
 namespace mynance.src.navigation.pages.controllers
 {
@@ -12,7 +13,24 @@ namespace mynance.src.navigation.pages.controllers
 		{
 			// fetch user budget
 			BudgetContext budgetCtx = new();
-			Budget = budgetCtx.Budgets.Where(b => b.Username == AuthGate.CurrentUser.Username).FirstOrDefault();
+			try
+			{
+				Budget = budgetCtx.Budgets.Where(b =>
+						b.Username == AuthGate.CurrentUser.Username &&
+						b.CategoryID == 1 &&
+						b.ValidUntil > DateTimeUtils.GetCurrentTimestamp()).FirstOrDefault();
+			}
+			catch (Exception ex)
+			{
+				Budget = new()
+				{
+					ValidUntil = DateTimeUtils.GetMonthExpiry(),
+					Username = AuthGate.CurrentUser.Username,
+					CategoryID = 1,
+					Amount = 0.0
+				};
+			}
+
 
 			UserPreferenceContext userPreferenceCtx = new();
 			UserPreference userPreference = userPreferenceCtx.UserPreferences

@@ -9,12 +9,5 @@ namespace mynance.src.localization
 		{
 			return LocExtension.GetLocalizedValue<T>(Assembly.GetCallingAssembly().GetName().Name + ":Locale:" + key);
 		}
-
-		public static String Translate(string key)
-		{
-			var locExtension = new LocExtension { Key = key };
-			locExtension.ResolveLocalizedValue(out string uiString);
-			return uiString ?? key;
-		}
 	}
 }

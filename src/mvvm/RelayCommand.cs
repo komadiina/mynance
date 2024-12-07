@@ -4,10 +4,23 @@ namespace mynance.src.mvvm
 {
 	public class RelayCommand : ICommand
 	{
-		private readonly Action _execute;
-		public RelayCommand(Action execute) => _execute = execute;
+		private Action<object> action;
+
+		public RelayCommand(Action<object> action)
+		{
+			this.action = action;
+		}
+
+		public bool CanExecute(object parameter)
+		{
+			return true;
+		}
+
+		public void Execute(object parameter)
+		{
+			action(parameter);
+		}
+
 		public event EventHandler CanExecuteChanged;
-		public bool CanExecute(object parameter) => true;
-		public void Execute(object parameter) => _execute();
 	}
 }

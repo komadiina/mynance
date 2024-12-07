@@ -14,8 +14,10 @@
              xmlns:components="clr-namespace:mynance.src.components"
 			 xmlns:adonisUi="clr-namespace:AdonisUI;assembly=AdonisUI"
              xmlns:adonisControls="clr-namespace:AdonisUI.Controls;assembly=AdonisUI"
-             xmlns:adonisExtensions="clr-namespace:AdonisUI.Extensions;assembly=AdonisUI">
-    <Border CornerRadius="0" BorderBrush="{DynamicResource TextColor}" BorderThickness="0,0,1,0">
+             xmlns:adonisExtensions="clr-namespace:AdonisUI.Extensions;assembly=AdonisUI"
+			 xmlns:locale="clr-namespace:mynance.src.localization">
+
+	<Border CornerRadius="0" BorderBrush="{DynamicResource TextColor}" BorderThickness="0,0,1,0">
         <DockPanel LastChildFill="False">
             <StackPanel DockPanel.Dock="Top" Orientation="Vertical" Margin="0,24" HorizontalAlignment="Center">
                 <Label Content="{lex:Loc SideNavbar_Greeting}" FontFamily="res/fonts/#Lexend Deca Light" FontSize="24" HorizontalAlignment="Center"/>
@@ -67,7 +69,7 @@
 
 			<StackPanel Orientation="Vertical" VerticalAlignment="Bottom" HorizontalAlignment="Center" DockPanel.Dock="Bottom">
 				<Button x:Name="btnThemeSwitch" Click="btnThemeSwitch_Click" Width="100" FontFamily="/res/fonts/#Lexend Light" Margin="0,10" FontSize="14"/>
-				<Button x:Name="btnLocaleSwitch" Click="btnLocaleSwitch_Click" Width="100" FontFamily="/res/fonts/#Lexend Light" Margin="0,10" FontSize="16"/>
+				<Button x:Name="btnLocaleSwitch" Click="btnLocaleSwitch_Click" Command="" Width="100" FontFamily="/res/fonts/#Lexend Light" Margin="0,10" FontSize="16"/>
 			</StackPanel>
 		</DockPanel>
     </Border>

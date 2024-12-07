@@ -7,9 +7,55 @@
       mc:Ignorable="d" 
       Width="1160"
       xmlns:components="clr-namespace:mynance.src.components"
-      Title="Mynance - Administration">
+      Title="Mynance - Administration"
+	  xmlns:lex="http://wpflocalizeextension.codeplex.com"
+	  lex:LocalizeDictionary.DesignCulture="en"
+	  lex:LocalizeDictionary.OutputMissingKeys="True"
+	  lex:ResxLocalizationProvider.DefaultAssembly="mynance"
+	  lex:ResxLocalizationProvider.DefaultDictionary="Locale">
 
-    <Grid>
-        <Label Content="LandingAdministrator"/>
-    </Grid>
+	<Page.Resources>
+		<Style TargetType="Label" BasedOn="{StaticResource {x:Type Label}}">
+			<Setter Property="FontSize" Value="26"/>
+			<Setter Property="FontFamily" Value="/res/fonts/#Lexend Light"/>
+		</Style>
+
+		<Style TargetType="TextBox" BasedOn="{StaticResource {x:Type TextBox}}">
+			<Setter Property="FontSize" Value="16"/>
+			<Setter Property="FontFamily" Value="/res/fonts/#Lexend Light"/>
+		</Style>
+	</Page.Resources>
+
+	<Page.DataContext>
+		<local:LandingAdministratorViewModel/>
+	</Page.DataContext>
+
+	<StackPanel Orientation="Horizontal">
+		<components:SideNavbar/>
+		<StackPanel Orientation="Vertical" Margin="40,0">
+			<Label Content="{lex:Loc Administrator_PortalHeader}" Margin="10,20"/>
+			<DataGrid ItemsSource="{Binding Users}" AutoGenerateColumns="False" Margin="0,10">
+				<DataGrid.Columns>
+					<DataGridTextColumn Binding="{Binding Path=Username, UpdateSourceTrigger=PropertyChanged}" Header="{lex:Loc Administrator_Username}"/>
+					<DataGridTextColumn Binding="{Binding Path=FullName, UpdateSourceTrigger=PropertyChanged}" Header="{lex:Loc Administrator_Fullname}"/>
+					<DataGridTextColumn Binding="{Binding Path=RegistrationDate, UpdateSourceTrigger=PropertyChanged}" Header="{lex:Loc Administrator_RegistrationDate}"/>
+					<DataGridTextColumn Binding="{Binding Path=LastActive, UpdateSourceTrigger=PropertyChanged}" Header="{lex:Loc Administrator_LastActive}"/>
+					<DataGridTemplateColumn Header="{lex:Loc Administrator_IsActive}">
+						<DataGridTemplateColumn.CellTemplate>
+							<DataTemplate>
+								<Button Content="{Binding Path=IsActive, UpdateSourceTrigger=PropertyChanged}" 
+										Command="{Binding ToggleActivateUserCommand}" 
+										CommandParameter="{Binding}"/>
+							</DataTemplate>
+						</DataGridTemplateColumn.CellTemplate>
+					</DataGridTemplateColumn>
+					<!--*  
+						<DataGridCheckBoxColumn Binding="{Binding Path=IsActive, UpdateSourceTrigger=PropertyChanged}" Header="Active"/>
+					*-->
+				</DataGrid.Columns> 
+			</DataGrid>
+		</StackPanel>
+	</StackPanel>
+	
+	
 </Page>

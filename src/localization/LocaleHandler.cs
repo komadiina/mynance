@@ -5,14 +5,12 @@ namespace mynance.src.localization
 {
 	public class LocaleHandler
 	{
-		private String currentLocale;
-		public String CurrentLocale
-		{
-			get { return currentLocale; }
-			set { currentLocale = value; }
-		}
+		public String CurrentLocale;
+
 		public static LocalizationProvider Provider = new();
 		public static LocaleHandler Instance = new();
+
+		public event EventHandler LocaleChanged;
 
 		private LocaleHandler()
 		{ }
@@ -22,6 +20,7 @@ namespace mynance.src.localization
 			LocalizeDictionary.Instance.SetCurrentThreadCulture = true;
 			LocalizeDictionary.Instance.Culture = new CultureInfo(cultureName);
 			CurrentLocale = cultureName;
+			OnLocaleChanged(EventArgs.Empty);
 		}
 
 		public void SetEnglish()
@@ -29,6 +28,7 @@ namespace mynance.src.localization
 			LocalizeDictionary.Instance.SetCurrentThreadCulture = true;
 			LocalizeDictionary.Instance.Culture = new CultureInfo("en-US");
 			CurrentLocale = "en-US";
+			OnLocaleChanged(EventArgs.Empty);
 		}
 
 		public void SetSerbian()
@@ -36,6 +36,12 @@ namespace mynance.src.localization
 			LocalizeDictionary.Instance.SetCurrentThreadCulture = true;
 			LocalizeDictionary.Instance.Culture = new CultureInfo("sr-Latn-RS");
 			CurrentLocale = "sr-Latn-RS";
+			OnLocaleChanged(EventArgs.Empty);
+		}
+
+		protected virtual void OnLocaleChanged(EventArgs e)
+		{
+			LocaleChanged?.Invoke(this, e);
 		}
 	}
 }

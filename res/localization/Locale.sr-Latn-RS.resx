@@ -181,6 +181,51 @@
     <value>Početna</value>
   </data>
   <data name="ProfilePage_BalanceStatus" xml:space="preserve">
-    <value>Stanje za</value>
+    <value>Stanje:</value>
+  </data>
+  <data name="CategoryTotal" xml:space="preserve">
+    <value>Ukupno</value>
+  </data>
+  <data name="CategoryBills" xml:space="preserve">
+    <value>Računi</value>
+  </data>
+  <data name="CategoryGroceries" xml:space="preserve">
+    <value>Namirnice</value>
+  </data>
+  <data name="CategorySubscriptions" xml:space="preserve">
+    <value>Pretplate</value>
+  </data>
+  <data name="CategoryLoans" xml:space="preserve">
+    <value>Krediti</value>
+  </data>
+  <data name="CategoryOther" xml:space="preserve">
+    <value>Ostalo</value>
+  </data>
+  <data name="Dashboard_CurrentBudget" xml:space="preserve">
+    <value>Budžet za tekući mjesec</value>
+  </data>
+  <data name="Dashboard_Spendings" xml:space="preserve">
+    <value>Potrošnja</value>
+  </data>
+  <data name="Dashboard_EditBudget" xml:space="preserve">
+    <value>Izmijeni budžet</value>
+  </data>
+  <data name="Administrator_PortalHeader" xml:space="preserve">
+    <value>Administratorski portal</value>
+  </data>
+  <data name="Administrator_Username" xml:space="preserve">
+    <value>Korisničko ime</value>
+  </data>
+  <data name="Administrator_RegistrationDate" xml:space="preserve">
+    <value>Datum registracije</value>
+  </data>
+  <data name="Administrator_LastActive" xml:space="preserve">
+    <value>Zadnji put viđen</value>
+  </data>
+  <data name="Administrator_Fullname" xml:space="preserve">
+    <value>Ime i prezime</value>
+  </data>
+  <data name="Administrator_IsActive" xml:space="preserve">
+    <value>Aktivan</value>
   </data>
 </root>

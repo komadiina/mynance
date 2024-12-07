@@ -182,6 +182,51 @@
     <value>Dashboard</value>
   </data>
   <data name="ProfilePage_BalanceStatus" xml:space="preserve">
-    <value>Balance as of</value>
+    <value>Balance:</value>
+  </data>
+  <data name="CategoryTotal" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="CategoryBills" xml:space="preserve">
+    <value>Bills</value>
+  </data>
+  <data name="CategoryGroceries" xml:space="preserve">
+    <value>Groceries</value>
+  </data>
+  <data name="CategorySubscriptions" xml:space="preserve">
+    <value>Subscriptions</value>
+  </data>
+  <data name="CategoryLoans" xml:space="preserve">
+    <value>Loans</value>
+  </data>
+  <data name="CategoryOther" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="Dashboard_CurrentBudget" xml:space="preserve">
+    <value>Budget for this month</value>
+  </data>
+  <data name="Dashboard_Spendings" xml:space="preserve">
+    <value>Spendings</value>
+  </data>
+  <data name="Dashboard_EditBudget" xml:space="preserve">
+    <value>Edit budget</value>
+  </data>
+  <data name="Administrator_PortalHeader" xml:space="preserve">
+    <value>Administrator Portal</value>
+  </data>
+  <data name="Administrator_Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="Administrator_RegistrationDate" xml:space="preserve">
+    <value>Registration date</value>
+  </data>
+  <data name="Administrator_LastActive" xml:space="preserve">
+    <value>Last seen</value>
+  </data>
+  <data name="Administrator_Fullname" xml:space="preserve">
+    <value>Full name</value>
+  </data>
+  <data name="Administrator_IsActive" xml:space="preserve">
+    <value>Active</value>
   </data>
 </root>

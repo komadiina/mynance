@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ognjen\\Desktop\\mynance\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|c:\\users\\ognjen\\desktop\\mynance\\src\\navigation\\pages\\landinguser.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|solutionrelative:src\\navigation\\pages\\landinguser.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|c:\\users\\ognjen\\desktop\\mynance\\src\\navigation\\pages\\landingadministrator.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|solutionrelative:src\\navigation\\pages\\landingadministrator.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|c:\\users\\ognjen\\desktop\\mynance\\src\\navigation\\pages\\landinguser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|solutionrelative:src\\navigation\\pages\\landinguser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|c:\\users\\ognjen\\desktop\\mynance\\src\\navigation\\pages\\vm\\landingadministratorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|solutionrelative:src\\navigation\\pages\\vm\\landingadministratorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|c:\\users\\ognjen\\desktop\\mynance\\src\\navigation\\pages\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|solutionrelative:src\\navigation\\pages\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|c:\\users\\ognjen\\desktop\\mynance\\src\\navigation\\pages\\landingadministrator.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|solutionrelative:src\\navigation\\pages\\landingadministrator.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|c:\\users\\ognjen\\desktop\\mynance\\src\\mvvm\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|solutionrelative:src\\mvvm\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|c:\\users\\ognjen\\desktop\\mynance\\src\\localization\\localehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|solutionrelative:src\\localization\\localehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|c:\\users\\ognjen\\desktop\\mynance\\src\\localization\\localizedstring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7ED5C6CE-C446-4A1A-B3D4-D51FAD40C4B3}|mynance.csproj|solutionrelative:src\\localization\\localizedstring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 277,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -45,17 +37,8 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RegisterPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\navigation\\pages\\RegisterPage.xaml.cs",
-              "RelativeDocumentMoniker": "src\\navigation\\pages\\RegisterPage.xaml.cs",
-              "ToolTip": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\navigation\\pages\\RegisterPage.xaml.cs",
-              "RelativeToolTip": "src\\navigation\\pages\\RegisterPage.xaml.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAswAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T17:42:55.63Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Document",
@@ -65,61 +48,46 @@
               "RelativeDocumentMoniker": "src\\mvvm\\RelayCommand.cs",
               "ToolTip": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\mvvm\\RelayCommand.cs",
               "RelativeToolTip": "src\\mvvm\\RelayCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T17:30:50.592Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T17:00:02.697Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LocaleHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\localization\\LocaleHandler.cs",
-              "RelativeDocumentMoniker": "src\\localization\\LocaleHandler.cs",
-              "ToolTip": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\localization\\LocaleHandler.cs",
-              "RelativeToolTip": "src\\localization\\LocaleHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T17:17:22.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LocalizedString.cs",
-              "DocumentMoniker": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\localization\\LocalizedString.cs",
-              "RelativeDocumentMoniker": "src\\localization\\LocalizedString.cs",
-              "ToolTip": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\localization\\LocalizedString.cs",
-              "RelativeToolTip": "src\\localization\\LocalizedString.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAmwBEAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T17:07:19.609Z",
+              "DocumentIndex": 0,
+              "Title": "LandingAdministrator.xaml",
+              "DocumentMoniker": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\navigation\\pages\\LandingAdministrator.xaml",
+              "RelativeDocumentMoniker": "src\\navigation\\pages\\LandingAdministrator.xaml",
+              "ToolTip": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\navigation\\pages\\LandingAdministrator.xaml",
+              "RelativeToolTip": "src\\navigation\\pages\\LandingAdministrator.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-07T16:49:47.041Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LandingUser.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\navigation\\pages\\LandingUser.xaml.cs",
-              "RelativeDocumentMoniker": "src\\navigation\\pages\\LandingUser.xaml.cs",
-              "ToolTip": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\navigation\\pages\\LandingUser.xaml.cs",
-              "RelativeToolTip": "src\\navigation\\pages\\LandingUser.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABMAAAAAAAAAA==",
+              "Title": "LandingAdministratorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\navigation\\pages\\vm\\LandingAdministratorViewModel.cs",
+              "RelativeDocumentMoniker": "src\\navigation\\pages\\vm\\LandingAdministratorViewModel.cs",
+              "ToolTip": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\navigation\\pages\\vm\\LandingAdministratorViewModel.cs",
+              "RelativeToolTip": "src\\navigation\\pages\\vm\\LandingAdministratorViewModel.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAmwCYAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T16:56:42.954Z",
+              "WhenOpened": "2024-12-07T16:39:54.002Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LandingUser.xaml",
-              "DocumentMoniker": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\navigation\\pages\\LandingUser.xaml",
-              "RelativeDocumentMoniker": "src\\navigation\\pages\\LandingUser.xaml",
-              "ToolTip": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\navigation\\pages\\LandingUser.xaml",
-              "RelativeToolTip": "src\\navigation\\pages\\LandingUser.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-05T16:44:46.96Z",
-              "EditorCaption": ""
+              "DocumentIndex": 2,
+              "Title": "LandingAdministrator.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\navigation\\pages\\LandingAdministrator.xaml.cs",
+              "RelativeDocumentMoniker": "src\\navigation\\pages\\LandingAdministrator.xaml.cs",
+              "ToolTip": "C:\\Users\\ognjen\\Desktop\\mynance\\src\\navigation\\pages\\LandingAdministrator.xaml.cs",
+              "RelativeToolTip": "src\\navigation\\pages\\LandingAdministrator.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T16:25:34.584Z"
             }
           ]
         }
