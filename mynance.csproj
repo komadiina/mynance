@@ -89,6 +89,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Locale.resx</DependentUpon>
     </Compile>
+    <Compile Update="src\navigation\pages\PaymentPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>

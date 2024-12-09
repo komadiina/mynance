@@ -196,11 +196,137 @@ namespace mynance.res.localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Spendings.
+        ///   Looks up a localized string similar to Edit.
+        /// </summary>
+        internal static string Dashboard_EditButton {
+            get {
+                return ResourceManager.GetString("Dashboard_EditButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Make a payment (incoming).
+        /// </summary>
+        internal static string Dashboard_MakePaymentIncoming {
+            get {
+                return ResourceManager.GetString("Dashboard_MakePaymentIncoming", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pay.
+        /// </summary>
+        internal static string Dashboard_MakePaymentIncomingButtonText {
+            get {
+                return ResourceManager.GetString("Dashboard_MakePaymentIncomingButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Make a payment (outgoing).
+        /// </summary>
+        internal static string Dashboard_MakePaymentOutgoing {
+            get {
+                return ResourceManager.GetString("Dashboard_MakePaymentOutgoing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pay.
+        /// </summary>
+        internal static string Dashboard_MakePaymentOutgoingButtonText {
+            get {
+                return ResourceManager.GetString("Dashboard_MakePaymentOutgoingButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Allocation.
         /// </summary>
         internal static string Dashboard_Spendings {
             get {
                 return ResourceManager.GetString("Dashboard_Spendings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error..
+        /// </summary>
+        internal static string Error {
+            get {
+                return ResourceManager.GetString("Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Amount.
+        /// </summary>
+        internal static string History_Amount {
+            get {
+                return ResourceManager.GetString("History_Amount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Budget ID.
+        /// </summary>
+        internal static string History_BudgetID {
+            get {
+                return ResourceManager.GetString("History_BudgetID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Category.
+        /// </summary>
+        internal static string History_Category {
+            get {
+                return ResourceManager.GetString("History_Category", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date.
+        /// </summary>
+        internal static string History_Datetime {
+            get {
+                return ResourceManager.GetString("History_Datetime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ID.
+        /// </summary>
+        internal static string History_ID {
+            get {
+                return ResourceManager.GetString("History_ID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Note.
+        /// </summary>
+        internal static string History_Note {
+            get {
+                return ResourceManager.GetString("History_Note", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Outgoing?.
+        /// </summary>
+        internal static string History_Outgoing {
+            get {
+                return ResourceManager.GetString("History_Outgoing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to History.
+        /// </summary>
+        internal static string History_Title {
+            get {
+                return ResourceManager.GetString("History_Title", resourceCulture);
             }
         }
         
@@ -286,11 +412,56 @@ namespace mynance.res.localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Balance:.
+        ///   Looks up a localized string similar to This month: .
         /// </summary>
         internal static string ProfilePage_BalanceStatus {
             get {
                 return ResourceManager.GetString("ProfilePage_BalanceStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        internal static string ProfilePage_FullName {
+            get {
+                return ResourceManager.GetString("ProfilePage_FullName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last active.
+        /// </summary>
+        internal static string ProfilePage_LastSeen {
+            get {
+                return ResourceManager.GetString("ProfilePage_LastSeen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Registration date.
+        /// </summary>
+        internal static string ProfilePage_RegistrationDate {
+            get {
+                return ResourceManager.GetString("ProfilePage_RegistrationDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your profile.
+        /// </summary>
+        internal static string ProfilePage_Title {
+            get {
+                return ResourceManager.GetString("ProfilePage_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Username.
+        /// </summary>
+        internal static string ProfilePage_Username {
+            get {
+                return ResourceManager.GetString("ProfilePage_Username", resourceCulture);
             }
         }
         
@@ -349,7 +520,7 @@ namespace mynance.res.localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Calendar.
+        ///   Looks up a localized string similar to History.
         /// </summary>
         internal static string SideNavbar_Calendar {
             get {
@@ -381,6 +552,15 @@ namespace mynance.res.localization {
         internal static string SideNavbar_Logout {
             get {
                 return ResourceManager.GetString("SideNavbar_Logout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Payment.
+        /// </summary>
+        internal static string SideNavbar_Payment {
+            get {
+                return ResourceManager.GetString("SideNavbar_Payment", resourceCulture);
             }
         }
         

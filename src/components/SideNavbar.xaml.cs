@@ -25,6 +25,9 @@ namespace mynance.src.components
 			btnLocaleSwitch.Content = LocaleHandler.Instance.CurrentLocale == "en-US"
 				? LocalizationProvider.GetLocalizedValue<string>("LocaleSerbian")
 				: LocalizationProvider.GetLocalizedValue<string>("LocaleEnglish");
+
+			NavCalendar.Visibility = AuthGate.Role == 1 ? Visibility.Hidden : Visibility.Visible;
+			NavPayment.Visibility = AuthGate.Role == 1 ? Visibility.Hidden : Visibility.Visible;
 		}
 
 		private void updateButtons(String cultureCode)
@@ -32,8 +35,8 @@ namespace mynance.src.components
 		}
 
 		public void NavProfileSettings_Click(object sender, RoutedEventArgs e) => Navigator.Replace(new ProfilePage());
-		public void NavCalendar_Click(object sender, RoutedEventArgs e) => Navigator.Replace(new CalendarPage());
-
+		public void NavCalendar_Click(object sender, RoutedEventArgs e) => Navigator.Replace(new HistoryPage());
+		private void NavPayment_Click(object sender, RoutedEventArgs e) => Navigator.Replace(new PaymentPage());
 		public void NavLogout_Click(object sender, RoutedEventArgs e)
 		{
 			AuthGate.Logout();

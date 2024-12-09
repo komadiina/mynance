@@ -4,17 +4,17 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace mynance.src.models.db
 {
 	[Table("budgets")]
-	[PrimaryKey(nameof(Username), nameof(ValidUntil), nameof(CategoryID))]
+	[PrimaryKey(nameof(Username), nameof(ValidUntil))]
 	public class Budget
 	{
+		[Column("id")]
+		public int ID { get; set; }
+
 		[Column("username")]
 		public string Username { get; set; }
 
 		[Column("valid_until")]
 		public long ValidUntil { get; set; }
-
-		[Column("category_id")]
-		public int CategoryID { get; set; } // ...foreign key constraint applied
 
 		[Column("amount")]
 		public Double Amount { get; set; }

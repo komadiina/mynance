@@ -1,0 +1,78 @@
+﻿<Page x:Class="mynance.src.navigation.pages.PaymentPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:mynance.src.navigation.pages"
+      mc:Ignorable="d" 
+      Title="Mynance | Payments"
+      Width="1160"
+      xmlns:components="clr-namespace:mynance.src.components"
+		
+	  xmlns:lex="http://wpflocalizeextension.codeplex.com"
+	  lex:LocalizeDictionary.DesignCulture="en"
+	  lex:LocalizeDictionary.OutputMissingKeys="True"
+	  lex:ResxLocalizationProvider.DefaultAssembly="mynance"
+	  lex:ResxLocalizationProvider.DefaultDictionary="Locale">
+
+	<Page.DataContext>
+		<local:UserPaymentViewModel/>
+	</Page.DataContext>
+
+	<Page.Resources>
+		<Style TargetType="Label" BasedOn="{StaticResource {x:Type Label}}">
+			<Setter Property="FontSize" Value="26"/>
+			<Setter Property="FontFamily" Value="/res/fonts/#Lexend Light"/>
+		</Style>
+
+		<Style TargetType="TextBox" BasedOn="{StaticResource {x:Type TextBox}}">
+			<Setter Property="FontSize" Value="16"/>
+			<Setter Property="FontFamily" Value="/res/fonts/#Lexend Light"/>
+		</Style>
+
+		<Style TargetType="TextBlock" BasedOn="{StaticResource {x:Type TextBlock}}">
+			<Setter Property="FontSize" Value="16"/>
+			<Setter Property="FontFamily" Value="/res/fonts/#Lexend Light"/>
+		</Style>
+	</Page.Resources>
+
+	<StackPanel Orientation="Horizontal">
+        <components:SideNavbar/>
+		<StackPanel Orientation="Vertical" Margin="16,8">
+			<Label Content="{lex:Loc SideNavbar_Payment}" Margin="0,20,0,0" FontFamily="/res/fonts/#Lexend Medium"/>
+			
+			<Label Content="{Binding Dashboard_MakePaymentOutgoing}" Margin="0,5"/>
+			<TextBox x:Name="tbPaymentOutgoingInput" Margin="0,5"/>
+			<ComboBox MaxWidth="350" Width="350" Margin="0,5,0,0" DropDownClosed="ComboBox_DropDownClosed" x:Name="CategoryComboBox" SelectedIndex="0">
+				<ComboBoxItem x:Uid="ctgBills" x:Name="ctgBills">
+					<TextBlock Text="{lex:Loc CategoryBills}"/>
+				</ComboBoxItem>
+				<ComboBoxItem x:Uid="ctgGroceries" x:Name="ctgGroceries">
+					<TextBlock Text="{lex:Loc CategoryGroceries}"/>
+				</ComboBoxItem>
+				<ComboBoxItem x:Uid="ctgSubscriptions" x:Name="ctgSubscriptions">
+					<TextBlock Text="{lex:Loc CategorySubscriptions}"/>
+				</ComboBoxItem>
+				<ComboBoxItem x:Uid="ctgLoans" x:Name="ctgLoans">
+					<TextBlock Text="{lex:Loc CategoryLoans}"/>
+				</ComboBoxItem>
+				<ComboBoxItem x:Uid="ctgOther" x:Name="ctgOther">
+					<TextBlock Text="{lex:Loc CategoryOther}"/>
+				</ComboBoxItem>
+			</ComboBox>
+
+			<TextBox x:Name="tbNoteOutgoing" Text="Note" Margin="0,5,0,0"/>
+
+			<Button x:Name="btnPaymentOutgoing" Click="btnPaymentOutgoing_Click" Margin="0,5" Content="{Binding Dashboard_MakePaymentOutgoingButtonText}"/>
+
+			<Separator Margin="0,25,0,25"/>
+
+			<Label Content="{Binding Dashboard_MakePaymentIncoming}"/>
+			<TextBox x:Name="tbPaymentIncomingInput" Margin="0,5"/>
+			<TextBox x:Name="tbNoteIncoming" Text="Note" Margin="0,5,0,0"/>
+			<Button x:Name="btnPaymentIncoming" Click="btnPaymentIncoming_Click" Margin="0,5" Content="{Binding Dashboard_MakePaymentIncomingButtonText}"/>
+		</StackPanel>
+		
+		
+    </StackPanel>
+</Page>

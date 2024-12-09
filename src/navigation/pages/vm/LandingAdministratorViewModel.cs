@@ -36,7 +36,9 @@ namespace mynance.src.navigation.pages
 				{
 					item.IsActive = !item.IsActive;
 					UserContext ctx = new();
-					ctx.Users.Where(u => u.Username == item.Username).FirstOrDefault().IsActive = !item.IsActive;
+					var targetUser = ctx.Users.Where(u => u.Username == item.Username).FirstOrDefault();
+					targetUser.IsActive = !item.IsActive;
+					ctx.Users.Update(targetUser);
 					ctx.SaveChanges();
 				}
 			}

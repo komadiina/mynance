@@ -10,14 +10,14 @@
 		/// <returns>Timestamp in millis</returns>
 		public static long GetMonthExpiry()
 		{
-			DateTime today = DateTime.Now;
-			DateTime firstDayOfNextMonth = new DateTime(today.Year, today.Month, 1).AddMonths(1);
-			return firstDayOfNextMonth.Ticks / TimeSpan.TicksPerMillisecond;
+			DateTime now = DateTime.Now;
+			DateTime firstDayOfNextMonth = new DateTime(now.Year, now.Month, 1).AddMonths(1);
+			return ((DateTimeOffset)firstDayOfNextMonth).ToUnixTimeSeconds();
 		}
 
 		public static long GetCurrentTimestamp()
 		{
-			return DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
+			return DateTimeOffset.Now.ToUnixTimeSeconds();
 		}
 	}
 }

@@ -16,7 +16,6 @@
              xmlns:adonisControls="clr-namespace:AdonisUI.Controls;assembly=AdonisUI"
              xmlns:adonisExtensions="clr-namespace:AdonisUI.Extensions;assembly=AdonisUI"
 			 xmlns:locale="clr-namespace:mynance.src.localization">
-
 	<Border CornerRadius="0" BorderBrush="{DynamicResource TextColor}" BorderThickness="0,0,1,0">
         <DockPanel LastChildFill="False">
             <StackPanel DockPanel.Dock="Top" Orientation="Vertical" Margin="0,24" HorizontalAlignment="Center">
@@ -24,8 +23,8 @@
                 <Label x:Name="UserFullname" FontFamily="res/fonts/#Lexend Deca Light" FontSize="20" HorizontalAlignment="Center"/>
 
                 <Separator Margin="0,24,0,24" />
-                
-                <Button 
+
+				<Button 
                     x:Name="NavDashboard" 
                     FontSize="16"  
                     FontFamily="/res/fonts/#Lexend Light"    
@@ -35,7 +34,17 @@
                     Width="100" 
                     Margin="0,10"/>
 
-                <Button 
+				<Button 
+                    x:Name="NavProfileSettings" 
+                    FontSize="16"  
+                    FontFamily="/res/fonts/#Lexend Light"    
+                    Content="{lex:Loc SideNavbar_ProfileSettings}"
+                    HorizontalAlignment="Center"
+                    Click="NavProfileSettings_Click" 
+                    Width="100" 
+                    Margin="0,10"/>
+
+				<Button 
                     x:Name="NavCalendar" 
                     FontFamily="/res/fonts/#Lexend Light" 
                     FontSize="16"  
@@ -45,16 +54,16 @@
                     Width="100" 
                     Margin="0,10"/>
 
-                <Button 
-                    x:Name="NavProfileSettings" 
+				<Button 
+                    x:Name="NavPayment" 
+                    FontFamily="/res/fonts/#Lexend Light" 
                     FontSize="16"  
-                    FontFamily="/res/fonts/#Lexend Light"    
-                    Content="{lex:Loc SideNavbar_ProfileSettings}"
                     HorizontalAlignment="Center"
-                    Click="NavProfileSettings_Click" 
+                    Content="{lex:Loc SideNavbar_Payment}"
+                    Click="NavPayment_Click" 
                     Width="100" 
                     Margin="0,10"/>
-            </StackPanel>
+			</StackPanel>
 
 			<Button 
                 x:Name="NavLogout" 

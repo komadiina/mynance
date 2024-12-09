@@ -22,7 +22,7 @@
 	  
 	  xmlns:locale="clr-namespace:mynance.src.localization;assembly=mynance"
 	  xmlns:components="clr-namespace:mynance.src.components"
-	  d:DataContext="{d:DesignInstance local:LandingUserViewModel}"
+	  
 	  >
 	<Page.DataContext>
 		<local:LandingUserViewModel/>
@@ -38,15 +38,20 @@
 			<Setter Property="FontSize" Value="16"/>
 			<Setter Property="FontFamily" Value="/res/fonts/#Lexend Light"/>
 		</Style>
+
+		<Style TargetType="TextBlock" BasedOn="{StaticResource {x:Type TextBlock}}">
+			<Setter Property="FontSize" Value="16"/>
+			<Setter Property="FontFamily" Value="/res/fonts/#Lexend Light"/>
+		</Style>
 	</Page.Resources>
 
 	<StackPanel Orientation="Horizontal">
         <components:SideNavbar/>
 		<StackPanel Orientation="Vertical" Margin="16,8">
-			<Label Content="{Binding SideNavbar_Dashboard}" Margin="0,20,0,0"/>
+			<Label Content="{Binding SideNavbar_Dashboard}" Margin="0,20,0,0" FontFamily="/res/fonts/#Lexend Medium"/>
 			<StackPanel Orientation="Horizontal">
 				<Label Content="{Binding ProfilePage_BalanceStatus}" Margin="0,4"/>
-				<Label x:Name="lblBalanceAmount" Margin="0,4,0,3"/>
+				<Label x:Name="lblBalanceAmount" Content="{Binding BalanceStatusDisplay}" Margin="0,4,0,3"/>
 			</StackPanel>
 			
 			<Separator Margin="0"/>
@@ -54,12 +59,87 @@
 			<Label Content="{Binding Dashboard_Spendings}" Margin="0,5,0,0"/>
 			<lvc:PieChart Series="{Binding BudgetSeries}" Width="300" Height="300"/>
 
-			<Separator Margin="0,5,0,5"/>
+			<Separator Margin="0,5,0,25"/>
 
-			<DockPanel Width="300">
+			<DockPanel Width="500">
 				<Label Content="{Binding Dashboard_EditBudget}" DockPanel.Dock="Left"/>
-				<TextBox x:Name="tbEditBudget" Text="{Binding BudgetValue}" Width="100" DockPanel.Dock="Right" HorizontalAlignment="Right" KeyDown="tbEditBudget_KeyDown"/>
+				<TextBox x:Name="tbEditBudget" Text="{Binding EditBudgetTextBox}" Width="100" DockPanel.Dock="Right" HorizontalAlignment="Right"/>
 			</DockPanel>
+			<ComboBox MaxWidth="500" Margin="0,5,0,0" DropDownClosed="ComboBox_DropDownClosed" x:Name="CategoryComboBox" SelectedIndex="0">
+				<ComboBoxItem x:Uid="ctgTotal" x:Name="ctgTotal">
+					<TextBlock Text="{lex:Loc CategoryTotal}"/>
+				</ComboBoxItem>
+				<ComboBoxItem x:Uid="ctgBills" x:Name="ctgBills">
+					<TextBlock Text="{lex:Loc CategoryBills}"/>
+				</ComboBoxItem>
+				<ComboBoxItem x:Uid="ctgGroceries" x:Name="ctgGroceries">
+					<TextBlock Text="{lex:Loc CategoryGroceries}"/>
+				</ComboBoxItem>
+				<ComboBoxItem x:Uid="ctgSubscriptions" x:Name="ctgSubscriptions">
+					<TextBlock Text="{lex:Loc CategorySubscriptions}"/>
+				</ComboBoxItem>
+				<ComboBoxItem x:Uid="ctgLoans" x:Name="ctgLoans">
+					<TextBlock Text="{lex:Loc CategoryLoans}"/>
+				</ComboBoxItem>
+				<ComboBoxItem x:Uid="ctgOther" x:Name="ctgOther">
+					<TextBlock Text="{lex:Loc CategoryOther}"/>
+				</ComboBoxItem>
+			</ComboBox>
+			<Button x:Name="btnEditBudget" Content="{Binding Dashboard_EditButton}" Click="btnEditBudget_Click" MaxWidth="500" Margin="0,5,0,0"/>
+
+			<Separator Margin="0,20,0,25"/>
+			<StackPanel Orientation="Horizontal">
+				<StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+					<lvc:PieChart 
+						Width="100"
+						Height="100"
+						Series="{Binding BillsGauge}"
+						InitialRotation="90"
+						MinValue="0"
+						MaxValue="{Binding BillsBudget}"/>
+					<TextBlock Text="{lex:Loc CategoryBills}" Margin="0,10" HorizontalAlignment="Center"/>
+				</StackPanel>
+				<StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+					<lvc:PieChart 
+						Width="100"
+						Height="100"
+						Series="{Binding GroceriesGauge}"
+						InitialRotation="90"
+						MinValue="0"
+						MaxValue="{Binding GroceriesBudget}"/>
+					<TextBlock Text="{lex:Loc CategoryGroceries}" Margin="0,10" HorizontalAlignment="Center"/>
+				</StackPanel>
+				<StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+					<lvc:PieChart 
+						Width="100"
+						Height="100"
+						Series="{Binding LoansGauge}"
+						InitialRotation="90"
+						MinValue="0"
+						MaxValue="{Binding LoansBudget}"/>
+					<TextBlock Text="{lex:Loc CategoryLoans}" Margin="0,10" HorizontalAlignment="Center"/>
+				</StackPanel>
+				<StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+					<lvc:PieChart 
+						Width="100"
+						Height="100"
+						Series="{Binding SubscriptionsGauge}"
+						InitialRotation="90"
+						MinValue="0"
+						MaxValue="{Binding SubscriptionsBudget}"/>
+					<TextBlock Text="{lex:Loc CategorySubscriptions}" Margin="0,10" HorizontalAlignment="Center"/>
+				</StackPanel>
+				<StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+					<lvc:PieChart 
+						Width="100"
+						Height="100"
+						Series="{Binding OtherGauge}"
+						InitialRotation="90"
+						MinValue="0"
+						MaxValue="{Binding OtherBudget}"/>
+					<TextBlock Text="{lex:Loc CategoryOther}" Margin="0,10" HorizontalAlignment="Center"/>
+				</StackPanel>
+			</StackPanel>
 		</StackPanel>
 	</StackPanel>
 </Page>

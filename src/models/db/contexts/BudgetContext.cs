@@ -12,6 +12,10 @@ namespace mynance.src.models.db.contexts
 
 			modelBuilder.Entity<Budget>()
 				.Property(x => x.Username).HasColumnName("username");
+
+			modelBuilder.Entity<Budget>()
+				.Property(b => b.ID)
+				.ValueGeneratedOnAdd();
 		}
 	}
 }

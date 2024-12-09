@@ -7,7 +7,7 @@
         xmlns:adonisUi="clr-namespace:AdonisUI;assembly=AdonisUI"
         xmlns:adonisControls="clr-namespace:AdonisUI.Controls;assembly=AdonisUI"
         mc:Ignorable="d"
-        Title="Mynance" Height="800" Width="1200"
+        Title="Mynance" Height="800" Width="750"
         xmlns:lex="http://wpflocalizeextension.codeplex.com"
         lex:LocalizeDictionary.DesignCulture="en"
         lex:LocalizeDictionary.OutputMissingKeys="True"
@@ -23,7 +23,7 @@
         <FontFamily x:Key="LexendLight">res/fonts/#Lexend Light</FontFamily>
     </Window.Resources>
 
-    <StackPanel Orientation="Vertical" Background="{DynamicResource BackgroundColor}" Margin="{adonisUi:Space 1.5}" HorizontalAlignment="Left" VerticalAlignment="Center">
+    <StackPanel Orientation="Vertical" Background="{DynamicResource BackgroundColor}" HorizontalAlignment="Left" VerticalAlignment="Center">
         <Frame Source="src/navigation/pages/LoginPage.xaml"/>
     </StackPanel>
 </adonisControls:AdonisWindow>

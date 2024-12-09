@@ -2,6 +2,7 @@
 using mynance.src.exceptions;
 using mynance.src.exceptions.auth;
 using mynance.src.localization;
+using mynance.src.models;
 using mynance.src.models.db;
 using mynance.src.models.db.contexts;
 using mynance.src.styles;
@@ -89,7 +90,7 @@ namespace mynance.src.auth
 
 		public void RegisterUser(String username, String password, String passwordRepeat, String fullName)
 		{
-			if (username.Length < 16)
+			if (username.Length >= 16)
 				throw new InvalidUsernameException(LocalizedMessages.Instance.GetMessage("usernameTooLong"));
 
 			if (usernameRegex.IsMatch(username) == false)
@@ -147,6 +148,8 @@ namespace mynance.src.auth
 				preferencesCtx.Update(preference);
 				preferencesCtx.SaveChanges();
 			}
+
+			if (Role == 2) UserState.Instance.Persist();
 
 			// Invalidate session
 			CurrentUser = null;

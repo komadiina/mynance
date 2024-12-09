@@ -1,5 +1,5 @@
-﻿using System.Windows.Controls;
-using System.Windows.Input;
+﻿using mynance.src.localization;
+using System.Windows.Controls;
 
 namespace mynance.src.navigation.pages
 {
@@ -10,22 +10,27 @@ namespace mynance.src.navigation.pages
 	{
 		public LandingUser()
 		{
-			InitializeComponent();
-
-			lblBalanceAmount.Content = String.Format(
-				" {0:.00} {1}",
-				LandingUserViewModel.Controller.Budget.Amount,
-				LandingUserViewModel.Controller.Currency.AlphabeticCode
-			);
-
 			DataContext = new LandingUserViewModel();
+			InitializeComponent();
 		}
 
-		private void tbEditBudget_KeyDown(object sender, KeyEventArgs e)
+		private void ComboBox_DropDownClosed(object sender, EventArgs e)
 		{
-			if (e.Key == Key.Enter)
+			return;
+		}
+
+		private void btnEditBudget_Click(object sender, System.Windows.RoutedEventArgs e)
+		{
+			try
 			{
-				((LandingUserViewModel)this.DataContext).BudgetValue = tbEditBudget.Text;
+				if (((LandingUserViewModel)this.DataContext).TryEditBudget(tbEditBudget.Text, CategoryComboBox.SelectedIndex) == false)
+				{
+					tbEditBudget.Text = LocalizationProvider.GetLocalizedValue<string>("Error");
+				}
+			}
+			catch (Exception)
+			{
+				tbEditBudget.Text = LocalizationProvider.GetLocalizedValue<string>("Error");
 			}
 		}
 	}

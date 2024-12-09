@@ -7,14 +7,55 @@
       mc:Ignorable="d" 
 
       Title="ProfilePage"
-      Width="1160"
-      xmlns:components="clr-namespace:mynance.src.components">
+      Width="750"
+      xmlns:components="clr-namespace:mynance.src.components"
+	  xmlns:lex="http://wpflocalizeextension.codeplex.com"
+      lex:LocalizeDictionary.DesignCulture="en"
+      lex:LocalizeDictionary.OutputMissingKeys="True"
+      lex:ResxLocalizationProvider.DefaultAssembly="mynance"
+      lex:ResxLocalizationProvider.DefaultDictionary="Locale">
 
-    <StackPanel Orientation="Horizontal">
-        <components:SideNavbar/>
-        
-        <Border BorderThickness="0" Margin="24">
-            <Label Content="ProfilePage"/>
-        </Border>
-    </StackPanel>
+	<Page.Resources>
+		<local:UnixTimestampConverter x:Key="UnixTimestampConverter"/>
+		<local:CategoryIDConverter x:Key="CategoryIDConverter"/>
+
+		<Style TargetType="Label" BasedOn="{StaticResource {x:Type Label}}">
+			<Setter Property="FontSize" Value="26"/>
+			<Setter Property="FontFamily" Value="/res/fonts/#Lexend Light"/>
+		</Style>
+
+		<Style TargetType="TextBox" BasedOn="{StaticResource {x:Type TextBox}}">
+			<Setter Property="FontSize" Value="16"/>
+			<Setter Property="FontFamily" Value="/res/fonts/#Lexend Light"/>
+		</Style>
+	</Page.Resources>
+
+	<Page.DataContext>
+		<local:ProfilePageViewModel/>
+	</Page.DataContext>
+	
+	<StackPanel Orientation="Horizontal">
+		<components:SideNavbar/>
+
+		<StackPanel Orientation="Vertical" Margin="16,25">
+			<Label Content="{lex:Loc ProfilePage_Title}" Margin="0,5" FontFamily="/res/fonts/#Lexend Medium"/>
+			<Separator Margin="0,5"/>
+			
+			<Label Content="{lex:Loc ProfilePage_Username}" />
+			<Label Content="{Binding ProfilePage_UsernameValue}" FontSize="20"/>
+			<Separator Margin="0,5"/>
+
+			<Label Content="{lex:Loc ProfilePage_Fullname}"/>
+			<Label Content="{Binding ProfilePage_FullnameValue}" FontSize="20"/>
+			<Separator Margin="0,5"/>
+
+			<Label Content="{lex:Loc ProfilePage_RegistrationDate}" />
+			<Label Content="{Binding ProfilePage_RegistrationDateValue}" FontSize="20"/>
+			<Separator Margin="0,5"/>
+
+			<Label Content="{lex:Loc ProfilePage_LastSeen}"/>
+			<Label Content="{Binding ProfilePage_LastSeenValue}" FontSize="20"/>
+			<Separator Margin="0,5"/>
+		</StackPanel>
+	</StackPanel>
 </Page>

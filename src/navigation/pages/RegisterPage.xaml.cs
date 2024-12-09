@@ -1,5 +1,6 @@
 ﻿using mynance.src.auth;
 using mynance.src.exceptions;
+using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -30,6 +31,8 @@ namespace mynance.src.navigation.pages
 
 		private void Register(String username, String password, String passwordConfirm, String fullName)
 		{
+			Trace.WriteLine(username + ":" + password + ":" + passwordConfirm + ":" + fullName);
+
 			try
 			{
 				AuthGate auth = new AuthGate();

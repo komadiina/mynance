@@ -2,6 +2,8 @@
 using mynance.src.exceptions;
 using mynance.src.localization;
 using mynance.src.styles;
+using mynance.src.utilities;
+using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -16,7 +18,9 @@ namespace mynance.src.navigation.pages
 	{
 		public LoginPage()
 		{
+			Trace.WriteLine(DateTimeUtils.GetMonthExpiry());
 			InitializeComponent();
+			tbUsername.Focus();
 		}
 
 		private void BtnSignIn_Enter(object sender, KeyEventArgs e)

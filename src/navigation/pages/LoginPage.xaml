@@ -17,7 +17,7 @@
       xmlns:adonisExtensions="clr-namespace:AdonisUI.Extensions;assembly=AdonisUI"
       >
 
-    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left">
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0">
         <StackPanel.Resources>
             <Style TargetType="{x:Type Label}">
                 <Setter Property="Margin" Value="0,10,0,0"/>

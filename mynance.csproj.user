@@ -19,7 +19,7 @@
     <Compile Update="src\components\UserDashboard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="src\navigation\pages\CalendarPage.xaml.cs">
+    <Compile Update="src\navigation\pages\HistoryPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="src\navigation\pages\LandingAdministrator.xaml.cs">
@@ -57,7 +57,10 @@
     <Page Update="src\components\UserDashboard.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="src\navigation\pages\CalendarPage.xaml">
+    <Page Update="src\navigation\pages\PaymentPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="src\navigation\pages\HistoryPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="src\navigation\pages\LandingAdministrator.xaml">

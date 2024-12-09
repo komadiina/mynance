@@ -173,7 +173,7 @@
     <value>Profile</value>
   </data>
   <data name="SideNavbar_Calendar" xml:space="preserve">
-    <value>Calendar</value>
+    <value>History</value>
   </data>
   <data name="SideNavbar_Logout" xml:space="preserve">
     <value>Sign out</value>
@@ -182,7 +182,7 @@
     <value>Dashboard</value>
   </data>
   <data name="ProfilePage_BalanceStatus" xml:space="preserve">
-    <value>Balance:</value>
+    <value>This month: </value>
   </data>
   <data name="CategoryTotal" xml:space="preserve">
     <value>Total</value>
@@ -206,7 +206,7 @@
     <value>Budget for this month</value>
   </data>
   <data name="Dashboard_Spendings" xml:space="preserve">
-    <value>Spendings</value>
+    <value>Allocation</value>
   </data>
   <data name="Dashboard_EditBudget" xml:space="preserve">
     <value>Edit budget</value>
@@ -228,5 +228,65 @@
   </data>
   <data name="Administrator_IsActive" xml:space="preserve">
     <value>Active</value>
+  </data>
+  <data name="Dashboard_MakePaymentOutgoing" xml:space="preserve">
+    <value>Make a payment (outgoing)</value>
+  </data>
+  <data name="Dashboard_MakePaymentIncoming" xml:space="preserve">
+    <value>Make a payment (incoming)</value>
+  </data>
+  <data name="Dashboard_MakePaymentIncomingButtonText" xml:space="preserve">
+    <value>Pay</value>
+  </data>
+  <data name="Dashboard_MakePaymentOutgoingButtonText" xml:space="preserve">
+    <value>Pay</value>
+  </data>
+  <data name="SideNavbar_Payment" xml:space="preserve">
+    <value>Payment</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error.</value>
+  </data>
+  <data name="Dashboard_EditButton" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="History_Title" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="History_ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="History_BudgetID" xml:space="preserve">
+    <value>Budget ID</value>
+  </data>
+  <data name="History_Amount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="History_Datetime" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="History_Note" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="History_Outgoing" xml:space="preserve">
+    <value>Outgoing?</value>
+  </data>
+  <data name="History_Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="ProfilePage_Title" xml:space="preserve">
+    <value>Your profile</value>
+  </data>
+  <data name="ProfilePage_RegistrationDate" xml:space="preserve">
+    <value>Registration date</value>
+  </data>
+  <data name="ProfilePage_FullName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="ProfilePage_Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="ProfilePage_LastSeen" xml:space="preserve">
+    <value>Last active</value>
   </data>
 </root>
